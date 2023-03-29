@@ -100,7 +100,7 @@ function volume() {
 	var sliderVal = document.getElementById("slider").value;
 
 	video.volume = sliderVal / 100;
-	document.getElementById("volume").innerHTML = sliderVal;
+	document.getElementById("volume").innerHTML = sliderVal + "%";
 
 	console.log("The current value is " + video.volume);
 }
