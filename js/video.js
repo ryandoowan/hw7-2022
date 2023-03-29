@@ -31,6 +31,9 @@ function onloadFunc() {
 function playVid() {
 	video = document.getElementById("player1");
 
+	var sliderVal = document.getElementById("slider").value;
+	document.getElementById("volume").innerHTML = sliderVal + "%";
+
 	video.play();
 	console.log("Play Video")
 }
